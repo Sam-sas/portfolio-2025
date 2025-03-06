@@ -1,8 +1,25 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+@import "tailwindcss";
+
+@theme {
+  --color-orange: #D95514;
+  --color-white: #FEFEFE;
+  --color-blue: #06071B;
+  --color-yellow: #F9CF49;
+  --color-black: #371B17;
+  --color-taupe: #FFF4C7;
+  --color-green: #4F5843;
+  --color-pink: #AB4D5F;
+  --color-light-blue: #A3AFC9;
+}
+
+body {
+  flex-direction: column;
   padding: 2rem;
   text-align: center;
+}
+
+#root {
+  width: 100vw;
 }
 
 .logo {
@@ -25,18 +42,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
