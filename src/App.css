@@ -1,45 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-orange: #D95514;
   --color-white: #FEFEFE;
-  --color-blue: #06071B;
-  --color-yellow: #F9CF49;
-  --color-black: #371B17;
-  --color-taupe: #FFF4C7;
-  --color-green: #4F5843;
-  --color-pink: #AB4D5F;
-  --color-light-blue: #A3AFC9;
-}
-
-body {
-  flex-direction: column;
-  padding: 2rem;
-  text-align: center;
+  --color-brownie: #6A3201;
+  --color-burnt-orange: #AD4402;
+  --color-orange: #E88D01;
+  --color-blue: #01516A;
+  --color-dark-blue: #002D42;
+  --color-light-blue: #277F89;
+  --color-neon-yellow: #CDF400;
 }
 
 #root {
   width: 100vw;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* navigation styles */
+.navbar {
+  font-family: "Lacquer", system-ui;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar a {
+  color: var(--color-neon-yellow);
 }
+
