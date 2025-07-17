@@ -1,16 +1,15 @@
-import { NavLink } from "react-router";
+import { motion } from "motion/react";
+import MotionNavLink from "./MotionNavLink";
 
 function Navigation() {
-  const navStyle = "text-base md:text-xl lg:text-2xl px-2 mb-4";
-    return (
-      <nav className="navbar flex justify-around p-2 bg-dark-blue text-burnt-orange">
-        <NavLink to="/" className={navStyle}>Home</NavLink>
-        <NavLink to="/about" className={navStyle}>About</NavLink>
-        <NavLink to="/projects" className={navStyle}>Projects</NavLink>
-        <NavLink to="/contactme" className={navStyle}>Contact</NavLink>
-      </nav>
-    )
-  }
-  
-  export default Navigation;
-  
+  return (
+    <motion.nav className="navbar flex justify-around p-3 bg-dark-blue text-burnt-orange">
+      <MotionNavLink linkName="Home" linkTo="/" />
+      <MotionNavLink linkName="About" linkTo="/about" />
+      <MotionNavLink linkName="Projects" linkTo="/projects" />
+      <MotionNavLink linkName="Contact" linkTo="contactme" />
+    </motion.nav>
+  );
+}
+
+export default Navigation;

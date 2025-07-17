@@ -23,5 +23,35 @@
 
 .navbar a {
   color: var(--color-neon-yellow);
+  transition: transform 0.25s cubic-bezier(0.6, -0.05, 0.01, 0.99);
 }
 
+.navbar a:hover {
+  transform: scale(1.1);
+}
+
+.dot {
+  position: relative;
+  height: 6px;
+  width: 6px;
+  background-color: var(--color-neon-yellow);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-top-left {
+  top: -20px;
+  right: 68px;
+}
+.dot-top-right {
+  top: -20px;
+  left: 1px;
+}
+.dot-bottom-left {
+  bottom: -11px;
+  right: 80px;
+}
+.dot-bottom-right {
+  bottom: -11px;
+  right: 11px;
+}
