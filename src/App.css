@@ -2,15 +2,21 @@
 @import "tailwindcss";
 
 @theme {
-  --color-white: #FEFEFE;
+  --color-white: #FFF;
+  --color-light-mid:#ccc;
+  --color-mid:#999;
+  --color-dark-mid:#444;
+  --color-black: #000;
+}
+/* going grayscale to get the vibe down */
+  /* --color-white: #FEFEFE;
   --color-brownie: #6A3201;
   --color-burnt-orange: #AD4402;
   --color-orange: #E88D01;
   --color-blue: #01516A;
   --color-dark-blue: #002D42;
   --color-light-blue: #277F89;
-  --color-neon-yellow: #CDF400;
-}
+  --color-neon-yellow: #CDF400; */
 
 #root {
   width: 100vw;
@@ -19,10 +25,13 @@
 /* navigation styles */
 .navbar {
   font-family: "Lacquer", system-ui;
+  padding: 1rem;
 }
 
 .navbar a {
-  color: var(--color-neon-yellow);
+  position: relative;
+  display: inline-block;
+  color: var(--color-white);
   transition: transform 0.25s cubic-bezier(0.6, -0.05, 0.01, 0.99);
 }
 
@@ -30,28 +39,32 @@
   transform: scale(1.1);
 }
 
+.navbar .active .dot {
+  /* fix me */
+}
+
 .dot {
-  position: relative;
+  position: absolute;
   height: 6px;
   width: 6px;
-  background-color: var(--color-neon-yellow);
+  background-color: var(--color-white);
   border-radius: 50%;
   display: inline-block;
 }
 
 .dot-top-left {
-  top: -20px;
-  right: 68px;
+  top: -2px;
+  left: -3px;
 }
 .dot-top-right {
-  top: -20px;
-  left: 1px;
+  top: -2px;
+  right: -3px;
 }
 .dot-bottom-left {
-  bottom: -11px;
-  right: 80px;
+  bottom: -2px;
+  left: -3px;
 }
 .dot-bottom-right {
-  bottom: -11px;
-  right: 11px;
+  bottom: -2px;
+  right: -3px;
 }

@@ -1,7 +1,7 @@
 function PageNotFound() {
     return (
       <>
-        <p>404 bitch</p>
+        <p>The swamp witch has eatin' this page.</p>
       </>
     )
   }
